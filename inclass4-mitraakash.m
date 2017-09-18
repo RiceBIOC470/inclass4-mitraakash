@@ -1,3 +1,5 @@
+% AW: Looks good in general. See comments below,. 0.89/1.
+
 %Akash Mitra
 %am132
 
@@ -27,7 +29,7 @@ file=fopen('AnswerInclass4.txt', 'r');
 line1=fgetl(file);
 actual_line=fgetl(file);
 arr1=strsplit(actual_line, "\t")
-
+%AW: this ends with a cell array of strings. Need to convert them to numbers with str2num -.01
 
 % 2. Write a function that takes an array as input and returns a logical
 % variable which is true if the sum of the numbers in the array is greater
@@ -35,3 +37,4 @@ arr1=strsplit(actual_line, "\t")
 
 input_array=randi([0,10],1, 20)
 greater_10=sum(input_array) >= 10
+%AW: this is okay, but not written as a function. -0.10. 
